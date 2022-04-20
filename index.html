@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<style>
+body {width: 100vw;
+height: 100vh;}
+.logo {background-image: url(logo.png);
+    
+    
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 12%;
+    background-size: 100px;
+    margin-left: 2%;
+    }
+span  {display: inline;
+    margin-top: 3%;}
+
+nav li {list-style-type: none;
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 110%;
+  }
+#list {margin-right: 4%;
+margin-left: 4%;}
+#list li {list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#list2 li {list-style-type: none;
+    text-decoration: none;
+    display: none;
+    margin-top: 0%;
+    margin-bottom: 0%;}
+nav ul {text-align: center;}
+nav a {text-decoration: none;}
+nav input {width: 300px;
+border: solid;
+border-width: 0.5px;
+padding-top: 5px;
+padding-bottom: 5px;}
+
+#one {margin-top: 3%;}
+#one nav ul li {float: left;
+}
+#one nav { margin-left: 10%;
+margin-top: 5%;}
+
+#border2 {border-top: solid;
+    border-bottom: solid;
+    border-width: 0.5px;
+margin-top: 4.5%;}
+
+#width1 {width: 48%;
+    float: left;
+    margin-top: 25px;
+    padding-left: 4%;
+background-repeat: none;}
+#width2 {width: 43%;
+    margin-top: 25px;
+    padding-right: 4%;
+float: right;
+background-repeat: none;}
+
+
+@media only screen and (max-width: 1100px) {
+.logo {margin-bottom: 5%;}  
+    #list li {display: none;}
+    #list2 li { display: inline-block; }
+   
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="one">
+<span class="logo"></span>
+<nav>
+    <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html">Trending</a></li>
+        <li><a href="shop.html">Easter</a></li>
+        <li><input name="searchbox" type="text" size="500"></li>
+        </ul>
+</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="border2">
+    <nav>
+        <ul id="list">
+            <li><a href="shop.html">Shop our latest voucher codes</a></li>
+            <li><a href="shop.html">Same or next day delivery available</a></li>
+            <li><a href="shop.html">Credit options available</a></li>
+            </ul>
+    </nav>  
+    <nav>
+        <ul id="list2">
+            <li><a href="shop.html">Shop our latest voucher codes</a></li>
+            </ul>
+    </nav>  
+</div>
+<img src="easter.png" id="width1">
+<img src="save.png" id="width2">
+</body>
+
+</html>
