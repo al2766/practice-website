@@ -1,130 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Title of the document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argos clone</title>
+</head>
 <style>
-body {width: 100vw;
-height: 100vh;}
-.logo {background-image: url(logo.png);
-    
-    
-    position: absolute;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    background-repeat: no-repeat;
-    width: 12%;
-    height: 12%;
-    background-size: 100px;
-    margin-left: 2%;
-    }
-span  {display: inline;
-    margin-top: 3%;}
+html, body { padding: 0;
+    margin: 0;}
+body {
+    width: 100vw;
+    height: 100vh;}
 
-nav li {list-style-type: none;
-    position: relative;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    right: auto;
+.nav1 {display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-top: 40px;}
+
+.nav2 {display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+margin-top: 10px;
+}
+
+.logo {height: 63px;
+    width: 63px;
+object-fit: cover;
+margin-left: .5vw;}
+
+nav li, nav a {
+    list-style-type: none;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 5%;
-    margin-left: 5%;
-    font-size: 110%;
+    font-size: 1.02em;
+    font-family:Arial, Helvetica, sans-serif;
+   
+    
   }
-#list {margin-right: 4%;
-margin-left: 4%;}
-#list li {list-style-type: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1px;
-    margin-bottom: 1px;
+.flex ul li {display: inline;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
+input {height: 30px;
+    width: 40vw;
+    margin-left: 20px;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border: solid;
+    border-width: 1px;
+    padding-left: 15px;}
 
-#list2 li {list-style-type: none;
-    text-decoration: none;
-    display: none;
-    margin-top: 0%;
-    margin-bottom: 0%;}
-nav ul {text-align: center;}
-nav a {text-decoration: none;}
-nav input {width: 300px;
-border: solid;
-border-width: 0.5px;
-padding-top: 5px;
-padding-bottom: 5px;}
-
-#one {margin-top: 3%;}
-#one nav ul li {float: left;
-}
-#one nav { margin-left: 10%;
-margin-top: 5%;}
-
-#border2 {border-top: solid;
+.border {
+    border-top: solid;
     border-bottom: solid;
     border-width: 0.5px;
-margin-top: 4.5%;}
+    line-height: 1vw;
+    width:100vw;
+    text-align: center;}
+
+#list ul li {
+    display: inline-block;
+    margin-right: 5vw;
+    margin-left: 5vw;}
 
 #width1 {width: 48%;
     float: left;
     margin-top: 25px;
     padding-left: 4%;
 background-repeat: none;}
+
 #width2 {width: 43%;
     margin-top: 25px;
     padding-right: 4%;
 float: right;
 background-repeat: none;}
 
-
-@media only screen and (max-width: 1100px) {
-.logo {margin-bottom: 5%;}  
-    #list li {display: none;}
-    #list2 li { display: inline-block; }
-   
+@media only screen and (max-width: 1035px) {
+#list .l2 {display: none;}
+#list .l3 {display: none;}
+.logo {height: 58px;
+    width: 58px;
+object-fit: cover;
+margin-left: .5vw;}
 }
 
-
+@media only screen and (max-width: 745px) {
+.logo {height: 50px;
+    width: 50px;
+object-fit: cover;
+margin-left: .5vw;}
+}
 </style>
 </head>
 
 <body>
-<div id="one">
-<span class="logo"></span>
-<nav>
+<header class="nav1">
+<img class="logo" src="logo.png" alt="logo">
+<nav class="flex">
     <ul>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="shop.html">Trending</a></li>
         <li><a href="shop.html">Easter</a></li>
-        <li><input name="searchbox" type="text" size="500"></li>
         </ul>
 </nav>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div id="border2">
-    <nav>
-        <ul id="list">
-            <li><a href="shop.html">Shop our latest voucher codes</a></li>
-            <li><a href="shop.html">Same or next day delivery available</a></li>
-            <li><a href="shop.html">Credit options available</a></li>
-            </ul>
-    </nav>  
-    <nav>
-        <ul id="list2">
-            <li><a href="shop.html">Shop our latest voucher codes</a></li>
+<input name="searchbox" type="text" size="50" placeholder="Search products, brands or FAQ'S">
+</header>
+<header class="nav2">
+<div class="border">
+    <nav id="list">
+        <ul>
+            <li class="l1"><a href="shop.html">Shop our latest voucher codes</a></li>
+            <li class="l2"><a href="shop.html">Same or next day delivery available</a></li>
+            <li class="l3"><a href="shop.html">Credit options available</a></li>
             </ul>
     </nav>  
 </div>
+</header>
 <img src="easter.png" id="width1">
 <img src="save.png" id="width2">
 </body>
